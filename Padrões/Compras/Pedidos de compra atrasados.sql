@@ -35,7 +35,7 @@ where
     and ((
         select 
             pci2.qtde 
-        from pedidoscompitens pci2 
+        from pedidoscompitens pci2
         where 
             pci.codpedcomp = pci2.codpedcomp 
             and pci.codpro = pci2.codpro 
