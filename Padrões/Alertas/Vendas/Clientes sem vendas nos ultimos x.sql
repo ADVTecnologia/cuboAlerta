@@ -1,9 +1,9 @@
 select
-    c.razao
-    , c.fantasia
-    , c.cpcn
-    , c.email
-    , c.fone1
+    c.razao             as "Razão social"
+    , c.fantasia        as "Nome fantasia"
+    , c.cpcn            as "CPF/CNPJ"
+    , c.email           as "Email"
+    , c.fone1           as "Telefone"
 from clientes c
 where codcli not in(
     select distinct
